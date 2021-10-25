@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" theme="01">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="heading">
+          <h2>calc</h2>
+          <div class="toggle-group">
+            <p>theme</p>
+            <p>1 2 3</p>
+            <div class="toggle">
+              <div class="toggle-selector"></div>
+            </div>
+          </div>
+        </div>
+        <div class="screen">
+          <h1 data-current></h1>
+        </div>
+        <div class="keys">
+          <div class="grid-4">
+            <div data-number class="btn">
+              <p>7</p>
+            </div>
+            <div data-number class="btn">
+              <p>8</p>
+            </div>
+            <div data-number class="btn">
+              <p>9</p>
+            </div>
+            <div data-delete class="btn btn-dark">
+              <p>del</p>
+            </div>
+            <div data-number class="btn">
+              <p>4</p>
+            </div>
+            <div data-number class="btn">
+              <p>5</p>
+            </div>
+            <div data-number class="btn">
+              <p>6</p>
+            </div>
+            <div data-operation class="btn">
+              <p>+</p>
+            </div>
+            <div data-number class="btn">
+              <p>1</p>
+            </div>
+            <div data-number class="btn">
+              <p>2</p>
+            </div>
+            <div data-number class="btn">
+              <p>3</p>
+            </div>
+            <div data-operation class="btn">
+              <p>-</p>
+            </div>
+            <div data-number class="btn">
+              <p>.</p>
+            </div>
+            <div data-number class="btn">
+              <p>0</p>
+            </div>
+            <div data-operation class="btn">
+              <p>/</p>
+            </div>
+            <div data-operation class="btn">
+              <p>x</p>
+            </div>
+            <div data-reset class="btn btn-reset btn-dark">
+              <p>reset</p>
+            </div>
+            <div data-equals class="btn btn-equals">
+              <p>=</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

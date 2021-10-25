@@ -1,0 +1,114 @@
+//theme 01
+html {
+  --main-bg: hsl(222, 26%, 31%);
+
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  --key-bg: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+
+  --red: hsl(6, 63%, 50%);
+  --dark-red: hsl(6, 70%, 34%);
+
+  --key-bg-2: hsl(30, 25%, 89%);
+  --key-shadow-2: hsl(28, 16%, 65%);
+
+  --dark-text: hsl(221, 14%, 31%);
+  --light-text: hsl(0, 0%, 100%);
+}
+
+//theme 02
+html[theme="02"] {
+  --main-bg: hsl(0, 0%, 90%);
+
+  --toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  --key-bg: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+
+  --red: hsl(25, 98%, 40%);
+  --dark-red: hsl(25, 99%, 27%);
+
+  --key-bg-2: hsl(45, 7%, 89%);
+  --key-shadow-2: hsl(35, 11%, 61%);
+
+  --dark-text: hsl(60, 10%, 19%);
+  --light-text: hsl(0, 0%, 100%);
+
+  h1,
+  h2,
+  .toggle-group p {
+    color: var(--dark-text);
+  }
+}
+
+//theme 03
+html[theme="03"] {
+  --main-bg: hsl(268, 75%, 9%);
+
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  --key-bg: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+
+  --red: hsl(176, 100%, 44%);
+  --dark-red: hsl(177, 92%, 70%);
+
+  --key-bg-2: hsl(268, 47%, 21%);
+  --key-shadow-2: hsl(290, 70%, 36%);
+
+  --dark-text: hsl(198, 20%, 13%);
+  --light-text: hsl(52, 100%, 62%);
+
+  .btn {
+    color: #fff;
+  }
+  .btn-dark {
+    color: var(--light-text);
+  }
+
+  .btn-equals {
+    color: var(--light-text);
+  }
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--light-text);
+}
+
+.screen {
+  background-color: var(--screen-bg);
+}
+
+.toggle,
+.keys {
+  background-color: var(--toggle-bg);
+}
+
+.toggle-selector {
+  background-color: var(--red);
+}
+
+.grid-4 {
+  .btn {
+    background-color: var(--key-bg-2);
+    border-bottom: 5px solid var(--key-shadow-2);
+    color: var(--dark-text);
+  }
+
+  .btn-dark {
+    background-color: var(--key-bg);
+    border-bottom: 5px solid var(--key-shadow);
+    color: var(--light-text);
+  }
+
+  .btn-equals {
+    background-color: var(--red);
+    border-bottom: 5px solid var(--dark-red);
+    color: var(--light-text);
+  }
+}
